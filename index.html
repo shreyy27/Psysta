@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psysta - Mental Health Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Psysta</h1>
+        <p>Your Mental Health Companion</p>
+    </header>
+    <main>
+        <div class="chatbox">
+            <div id="messages"></div>
+            <textarea id="user-input" placeholder="Type your thoughts here..."></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Psysta. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
